@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista de tareas Codex</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="panel" aria-labelledby="app-title">
+      <div class="header">
+        <div>
+          <p class="eyebrow">Mini proyecto</p>
+          <h1 id="app-title">Lista de tareas</h1>
+        </div>
+        <span id="task-count" class="count">0 pendientes</span>
+      </div>
+
+      <form id="task-form" class="task-form">
+        <label for="task-input">Nueva tarea</label>
+        <div class="input-row">
+          <input id="task-input" type="text" placeholder="Escribe una tarea..." autocomplete="off">
+          <button type="submit">Agregar</button>
+        </div>
+        <p id="form-message" class="message" role="status"></p>
+      </form>
+
+      <div class="actions">
+        <button id="clear-completed" class="secondary-button" type="button">Limpiar completadas</button>
+      </div>
+
+      <ul id="task-list" class="task-list" aria-label="Tareas"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
